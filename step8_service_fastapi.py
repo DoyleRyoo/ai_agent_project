@@ -169,7 +169,7 @@ def chat(req: ChatRequest) -> ChatResponse:
 
     # return ChatResponse(answer=answer, model=MODEL_NAME, elapsed_ms=elapsed_ms, evidence=evidence)
 
-    return Resopnse(content=answer, media_type="text/plain; charset=utf-8")
+    return Response(content=answer, media_type="text/plain; charset=utf-8")
 """
 실행
 uvicorn step8_service_fastapi:app --reload --port 8000
